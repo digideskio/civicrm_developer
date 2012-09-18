@@ -16,7 +16,6 @@ function civicrm_developer_civicrm_pre($op, $objectName, $objectId, &$objectRef)
  * http://wiki.civicrm.org/confluence/display/CRMDOC33/CiviCRM+hook+specification#CiviCRMhookspecification-hookcivicrmpost
  */
 function civicrm_developer_civicrm_post($op, $objectName, $objectId, &$objectRef) {
-  $msg = "hook_civicrm_post called: op is $op, objectName is $objectName, objectID is $objectId";
   drupal_set_message("hook_civicrm_post called: op is $op, objectName is $objectName, objectID is $objectId");
   dpm(get_defined_vars());
 }
